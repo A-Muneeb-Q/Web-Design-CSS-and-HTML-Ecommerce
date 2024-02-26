@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover a world of style and convenience at ecommerce. Explore top-notch fashion, cutting-edge electronics, and more, all with secure transactions and fast, reliable delivery. Elevate your shopping experience with us today!">
+    <meta name="keywords" content="ecommerce, online store, products, shopping">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Eccomerce">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eccomerce">
+    <link rel="stylesheet" href="productStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Eccomerce Products</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">Eccomerce</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-selector">
+            <label onclick="showCategory('electronics')">Electronics</label>
+            <label onclick="showCategory('jewelry')">Jewelry</label>
+            <label onclick="showCategory('men\'s clothing')">Men's Clothing</label>
+            <label onclick="showCategory('women\'s clothing')">Women's Clothing</label>
+        </section>
+
+        <section id="gallery"></section>
+    </main>
+    <script src="product.js"></script>
+</body>
+
+</html>
